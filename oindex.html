@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>Online/Offline Indicator</title>
+</head>
+<body>
+  <h1>Online/Offline Indicator</h1>
+  <button id="check">Check connection</button>
+  <script>
+    function checkConnection() {
+      if (navigator.onLine) {
+        alert("You are online.");
+      } else {
+        alert("You are offline.");
+      }
+    }
+
+    const checkButton = document.getElementById("check");
+    checkButton.addEventListener("click", checkConnection);
+  </script>
+</body>
+</html>
